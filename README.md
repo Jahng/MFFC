@@ -1,5 +1,5 @@
 # MFFC
-基于Composer开发的第一个PHP框架。
+【学习笔记】基于Composer开发的PHP框架。
 
 ---
 路由：noahbuscher/macaw 
