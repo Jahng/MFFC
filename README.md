@@ -4,6 +4,8 @@
 ---
 路由：noahbuscher/macaw 
 
-模板引擎：twig/twig ORM: doctrine/orm
+模板引擎：twig/twig 
+
+ORM: doctrine/orm
 
 配置文件：symfony/yaml
