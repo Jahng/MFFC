@@ -9,7 +9,8 @@ class UserController extends BaseController{
 	}
 
 	public function info(){
-		$info = Models\UserModel::first();
+		$user_model = new Models\UserModel();
+		$info = $user_model->findAll();
 		$template = $this->twig->load('userinfo.html');
 		echo $template->render(array('userinfo' => $info));
 	}
