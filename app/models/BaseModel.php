@@ -15,7 +15,7 @@ class BaseModel{
 		$conn = array(
 		    'driver' => 'pdo_mysql',    
 		    'user'     => 'root',
-		    'password' => '1234abcd',
+		    'password' => '',
 		    'dbname'   => 'mffc',
 		);
 
