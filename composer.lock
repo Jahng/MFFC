@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3add96daa2ca1cdb881a52649f07aac1",
-    "content-hash": "64434b47f7204fe12e0236cc4e41835d",
+    "hash": "8f96c1b24592a7b6a27fd46dfd378908",
+    "content-hash": "7fd21576675b45a34dfe74478a64df93",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -286,16 +286,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "v2.5.7",
+            "version": "v2.5.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "3a351369582dade60c750e2cef540eb7b568e6b3"
+                "reference": "6314d55f60f85f0295c90688397b75c13faf9f0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://packagist.phpcomposer.com/files/doctrine/dbal/3a351369582dade60c750e2cef540eb7b568e6b3.zip",
-                "reference": "3a351369582dade60c750e2cef540eb7b568e6b3",
+                "url": "https://packagist.phpcomposer.com/files/doctrine/dbal/6314d55f60f85f0295c90688397b75c13faf9f0e.zip",
+                "reference": "6314d55f60f85f0295c90688397b75c13faf9f0e",
                 "shasum": ""
             },
             "require": {
@@ -353,7 +353,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2017-01-14 21:05:28"
+            "time": "2017-01-17 17:48:38"
         },
         {
             "name": "doctrine/inflector",
@@ -605,6 +605,47 @@
                 "orm"
             ],
             "time": "2016-12-18 15:42:34"
+        },
+        {
+            "name": "kronos/log",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kronostechnologies/kronos-log.git",
+                "reference": "4e7e3898683e901746b82ae69860047d9b8332d1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://packagist.phpcomposer.com/files/kronostechnologies/kronos-log/4e7e3898683e901746b82ae69860047d9b8332d1.zip",
+                "reference": "4e7e3898683e901746b82ae69860047d9b8332d1",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5",
+                "psr/log": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kronos\\Log\\": "Kronos/Log"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PSR-3 compliant logging component",
+            "homepage": "https://github.com/kronostechnologies/kronos-log",
+            "keywords": [
+                "kronos",
+                "log",
+                "logging",
+                "psr"
+            ],
+            "time": "2016-12-22 15:42:18"
         },
         {
             "name": "noahbuscher/macaw",

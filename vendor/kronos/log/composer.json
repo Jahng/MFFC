@@ -1,0 +1,25 @@
+{
+	"name": "kronos/log",
+	"type": "library",
+	"description": "PSR-3 compliant logging component",
+	"homepage": "https://github.com/kronostechnologies/kronos-log",
+	"license": "MIT",
+	"keywords": [
+		"kronos",
+		"log",
+		"logging",
+		"psr"
+	],
+	"autoload": {
+		"psr-4": {
+			"Kronos\\Log\\": "Kronos/Log"
+		}
+	},
+	"require": {
+		"php": "^5.5",
+		"psr/log": "^1.0"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "5.3.*"
+	}
+}

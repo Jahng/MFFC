@@ -14,6 +14,7 @@ return array(
     'NoahBuscher\\Macaw\\' => array($vendorDir . '/noahbuscher/macaw'),
     'MFFC\\Models\\' => array($baseDir . '/app/models'),
     'MFFC\\Controllers\\' => array($baseDir . '/app/controllers'),
+    'Kronos\\Log\\' => array($vendorDir . '/kronos/log/Kronos/Log'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
     'Doctrine\\Common\\Cache\\' => array($vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache'),
     'Doctrine\\Common\\Annotations\\' => array($vendorDir . '/doctrine/annotations/lib/Doctrine/Common/Annotations'),

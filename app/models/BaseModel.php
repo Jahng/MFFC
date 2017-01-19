@@ -9,16 +9,10 @@ class BaseModel{
 	protected  $EntityManager = NULL;
 
 	public function __construct(){
+		require_once './config/database.php';
 		$isDevMode = true;
 		$config = Setup::createAnnotationMetadataConfiguration(array(__DIR__."/app/models"), $isDevMode);
-		// database configuration parameters
-		$conn = array(
-		    'driver' => 'pdo_mysql',    
-		    'user'     => 'root',
-		    'password' => '',
-		    'dbname'   => 'mffc',
-		);
-
+		$conn = $database;
 		// obtaining the entity manager
 		$this->entityManager = EntityManager::create($conn, $config);
 	}

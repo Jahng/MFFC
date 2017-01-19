@@ -3,7 +3,8 @@
 		"noahbuscher/macaw": "dev-master",
 		"twig/twig": "v1.31.0",
 		"doctrine/orm": "v2.5.6",
-		"symfony/yaml": "v3.2.2"
+		"symfony/yaml": "v3.2.2",
+		"kronos/log": "1.0.0"
 	},
 	"repositories": {
 	    "packagist": {

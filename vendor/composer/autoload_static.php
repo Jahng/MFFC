@@ -31,6 +31,10 @@ class ComposerStaticInitb6379d1c3b2720e75008dc9605528328
             'MFFC\\Models\\' => 12,
             'MFFC\\Controllers\\' => 17,
         ),
+        'K' => 
+        array (
+            'Kronos\\Log\\' => 11,
+        ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
@@ -72,6 +76,10 @@ class ComposerStaticInitb6379d1c3b2720e75008dc9605528328
         'MFFC\\Controllers\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app/controllers',
+        ),
+        'Kronos\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kronos/log/Kronos/Log',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
