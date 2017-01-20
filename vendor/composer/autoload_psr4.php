@@ -14,9 +14,12 @@ return array(
     'NoahBuscher\\Macaw\\' => array($vendorDir . '/noahbuscher/macaw'),
     'MFFC\\Models\\' => array($baseDir . '/app/models'),
     'MFFC\\Controllers\\' => array($baseDir . '/app/controllers'),
-    'Kronos\\Log\\' => array($vendorDir . '/kronos/log/Kronos/Log'),
+    'MFFC\\Container\\' => array($baseDir . '/app/container'),
+    'League\\Container\\' => array($vendorDir . '/league/container/src'),
+    'Interop\\Container\\' => array($vendorDir . '/container-interop/container-interop/src/Interop/Container'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
     'Doctrine\\Common\\Cache\\' => array($vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache'),
     'Doctrine\\Common\\Annotations\\' => array($vendorDir . '/doctrine/annotations/lib/Doctrine/Common/Annotations'),
     'Doctrine\\Common\\' => array($vendorDir . '/doctrine/common/lib/Doctrine/Common'),
+    'Consolidation\\Log\\' => array($vendorDir . '/consolidation/log/src'),
 );

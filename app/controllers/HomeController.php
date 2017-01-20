@@ -6,7 +6,7 @@ class HomeController extends BaseController{
 	
 
 	public function home(){
-		$this->logger->error('This is home page');
+		$this->container->get('ConsoleLogger')->error('this is home page');
 		$template = $this->twig->load('home.html');
 		echo $template->render();
 	}

@@ -4,9 +4,83 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8f96c1b24592a7b6a27fd46dfd378908",
-    "content-hash": "7fd21576675b45a34dfe74478a64df93",
+    "hash": "d19519bfab497f28a87b60a7078d44bb",
+    "content-hash": "bd9db18a5973cf55be67a2e07d1553b3",
     "packages": [
+        {
+            "name": "consolidation/log",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/consolidation/log.git",
+                "reference": "74ba81b4edc585616747cc5c5309ce56fec41254"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://packagist.phpcomposer.com/files/consolidation/log/74ba81b4edc585616747cc5c5309ce56fec41254.zip",
+                "reference": "74ba81b4edc585616747cc5c5309ce56fec41254",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0",
+                "psr/log": "~1.0",
+                "symfony/console": "~2.5|~3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Consolidation\\Log\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Anderson",
+                    "email": "greg.1.anderson@greenknowe.org"
+                }
+            ],
+            "description": "Improved Psr-3 / Psr\\Log logger based on Symfony Console components.",
+            "time": "2016-03-23 23:46:42"
+        },
+        {
+            "name": "container-interop/container-interop",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/container-interop/container-interop.git",
+                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://packagist.phpcomposer.com/files/container-interop/container-interop/fc08354828f8fd3245f77a66b9e23a6bca48297e.zip",
+                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Interop\\Container\\": "src/Interop/Container/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
+            "time": "2014-12-30 15:22:37"
+        },
         {
             "name": "doctrine/annotations",
             "version": "v1.3.1",
@@ -286,16 +360,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "v2.5.8",
+            "version": "v2.5.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "6314d55f60f85f0295c90688397b75c13faf9f0e"
+                "reference": "0d2f8187d4b4c7b72d8e2acba359e25c36feaf5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://packagist.phpcomposer.com/files/doctrine/dbal/6314d55f60f85f0295c90688397b75c13faf9f0e.zip",
-                "reference": "6314d55f60f85f0295c90688397b75c13faf9f0e",
+                "url": "https://packagist.phpcomposer.com/files/doctrine/dbal/0d2f8187d4b4c7b72d8e2acba359e25c36feaf5e.zip",
+                "reference": "0d2f8187d4b4c7b72d8e2acba359e25c36feaf5e",
                 "shasum": ""
             },
             "require": {
@@ -353,7 +427,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2017-01-17 17:48:38"
+            "time": "2017-01-19 13:27:33"
         },
         {
             "name": "doctrine/inflector",
@@ -607,45 +681,68 @@
             "time": "2016-12-18 15:42:34"
         },
         {
-            "name": "kronos/log",
-            "version": "1.0.0",
+            "name": "league/container",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/kronostechnologies/kronos-log.git",
-                "reference": "4e7e3898683e901746b82ae69860047d9b8332d1"
+                "url": "https://github.com/thephpleague/container.git",
+                "reference": "c0e7d947b690891f700dc4967ead7bdb3d6708c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://packagist.phpcomposer.com/files/kronostechnologies/kronos-log/4e7e3898683e901746b82ae69860047d9b8332d1.zip",
-                "reference": "4e7e3898683e901746b82ae69860047d9b8332d1",
+                "url": "https://packagist.phpcomposer.com/files/thephpleague/container/c0e7d947b690891f700dc4967ead7bdb3d6708c1.zip",
+                "reference": "c0e7d947b690891f700dc4967ead7bdb3d6708c1",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5",
-                "psr/log": "^1.0"
+                "container-interop/container-interop": "^1.1",
+                "php": ">=5.4.0"
+            },
+            "provide": {
+                "container-interop/container-interop-implementation": "^1.1"
+            },
+            "replace": {
+                "orno/di": "~2.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "5.3.*"
+                "phpunit/phpunit": "4.*"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev",
+                    "dev-1.x": "1.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
-                    "Kronos\\Log\\": "Kronos/Log"
+                    "League\\Container\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "PSR-3 compliant logging component",
-            "homepage": "https://github.com/kronostechnologies/kronos-log",
-            "keywords": [
-                "kronos",
-                "log",
-                "logging",
-                "psr"
+            "authors": [
+                {
+                    "name": "Phil Bennett",
+                    "email": "philipobenito@gmail.com",
+                    "homepage": "http://www.philipobenito.com",
+                    "role": "Developer"
+                }
             ],
-            "time": "2016-12-22 15:42:18"
+            "description": "A fast and intuitive dependency injection container.",
+            "homepage": "https://github.com/thephpleague/container",
+            "keywords": [
+                "container",
+                "dependency",
+                "di",
+                "injection",
+                "league",
+                "provider",
+                "service"
+            ],
+            "time": "2016-03-17 11:07:59"
         },
         {
             "name": "noahbuscher/macaw",

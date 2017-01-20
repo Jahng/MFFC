@@ -30,10 +30,15 @@ class ComposerStaticInitb6379d1c3b2720e75008dc9605528328
         array (
             'MFFC\\Models\\' => 12,
             'MFFC\\Controllers\\' => 17,
+            'MFFC\\Container\\' => 15,
         ),
-        'K' => 
+        'L' => 
         array (
-            'Kronos\\Log\\' => 11,
+            'League\\Container\\' => 17,
+        ),
+        'I' => 
+        array (
+            'Interop\\Container\\' => 18,
         ),
         'D' => 
         array (
@@ -41,6 +46,10 @@ class ComposerStaticInitb6379d1c3b2720e75008dc9605528328
             'Doctrine\\Common\\Cache\\' => 22,
             'Doctrine\\Common\\Annotations\\' => 28,
             'Doctrine\\Common\\' => 16,
+        ),
+        'C' => 
+        array (
+            'Consolidation\\Log\\' => 18,
         ),
     );
 
@@ -77,9 +86,17 @@ class ComposerStaticInitb6379d1c3b2720e75008dc9605528328
         array (
             0 => __DIR__ . '/../..' . '/app/controllers',
         ),
-        'Kronos\\Log\\' => 
+        'MFFC\\Container\\' => 
         array (
-            0 => __DIR__ . '/..' . '/kronos/log/Kronos/Log',
+            0 => __DIR__ . '/../..' . '/app/container',
+        ),
+        'League\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/container/src',
+        ),
+        'Interop\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
@@ -96,6 +113,10 @@ class ComposerStaticInitb6379d1c3b2720e75008dc9605528328
         'Doctrine\\Common\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
+        ),
+        'Consolidation\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/consolidation/log/src',
         ),
     );
 

@@ -9,3 +9,7 @@
 ORM: doctrine/orm
 
 配置文件：symfony/yaml
+
+日志系统：symfony/console
+
+容器：League\Container
