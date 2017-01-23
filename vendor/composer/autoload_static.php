@@ -21,6 +21,7 @@ class ComposerStaticInitb6379d1c3b2720e75008dc9605528328
         'P' => 
         array (
             'Psr\\Log\\' => 8,
+            'Predis\\' => 7,
         ),
         'N' => 
         array (
@@ -73,6 +74,10 @@ class ComposerStaticInitb6379d1c3b2720e75008dc9605528328
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'Predis\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/predis/predis/src',
         ),
         'NoahBuscher\\Macaw\\' => 
         array (

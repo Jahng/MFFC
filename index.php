@@ -9,7 +9,6 @@ new MFFC\Container\MFFCcontainer(new League\Container\Container);
 // 路由配置
 require_once './config/routes.php';
 
-
 //$output = new Symfony\Component\Console\Output\StreamOutput(fopen('./log/debug.log', 'a', false));
 //var_dump($output);exit;
 //$logger = new Symfony\Component\Console\Logger\ConsoleLogger($output);
