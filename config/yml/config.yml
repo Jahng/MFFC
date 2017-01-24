@@ -6,7 +6,7 @@ database:
   dbname: mffc
 
 redis:
-  enable: true
+  enable: false
   config:
     scheme: tcp
     host: 192.168.1.113
