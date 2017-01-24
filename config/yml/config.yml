@@ -1,7 +1,13 @@
-doctrine:
-    dbal:
-        driver:   "%database_driver%"
-        host:     "%database_host%"
-        dbname:   "%database_name%"
-        user:     "%database_user%"
-        password: "%database_password%"
+database:
+  driver: pdo_mysql
+  host: 127.0.0.1
+  user: root
+  password: 
+  dbname: mffc
+
+redis:
+  enable: true
+  config:
+    scheme: tcp
+    host: 192.168.1.113
+    port: 6379

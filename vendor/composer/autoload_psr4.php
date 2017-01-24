@@ -13,6 +13,7 @@ return array(
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'Predis\\' => array($vendorDir . '/predis/predis/src'),
     'NoahBuscher\\Macaw\\' => array($vendorDir . '/noahbuscher/macaw'),
+    'MFFC\\core\\' => array($baseDir . '/core'),
     'MFFC\\Models\\' => array($baseDir . '/app/models'),
     'MFFC\\Controllers\\' => array($baseDir . '/app/controllers'),
     'MFFC\\Container\\' => array($baseDir . '/app/container'),

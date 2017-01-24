@@ -29,6 +29,7 @@ class ComposerStaticInitb6379d1c3b2720e75008dc9605528328
         ),
         'M' => 
         array (
+            'MFFC\\core\\' => 10,
             'MFFC\\Models\\' => 12,
             'MFFC\\Controllers\\' => 17,
             'MFFC\\Container\\' => 15,
@@ -82,6 +83,10 @@ class ComposerStaticInitb6379d1c3b2720e75008dc9605528328
         'NoahBuscher\\Macaw\\' => 
         array (
             0 => __DIR__ . '/..' . '/noahbuscher/macaw',
+        ),
+        'MFFC\\core\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/core',
         ),
         'MFFC\\Models\\' => 
         array (

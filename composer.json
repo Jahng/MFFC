@@ -18,7 +18,8 @@
 		"psr-4":{
 			"MFFC\\Controllers\\": "app/controllers",
 			"MFFC\\Models\\": "app/models",
-			"MFFC\\Container\\": "app/container"
+			"MFFC\\Container\\": "app/container",
+			"MFFC\\core\\": "core"
 		}
 	}
 }

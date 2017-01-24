@@ -12,6 +12,6 @@ ORM: doctrine/orm
 
 日志系统：symfony/console
 
-容器：League\Container
+容器：League/Containeru
 
 Redis: predis/predis
