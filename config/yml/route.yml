@@ -1,0 +1,8 @@
+homepage:
+  method: get
+  path: /
+  controller: \MFFC\Controllers\HomeController@home
+user_info:
+  method: get
+  path: /user/info
+  controller: \MFFC\Controllers\UserController@info

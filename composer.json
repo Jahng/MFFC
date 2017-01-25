@@ -6,7 +6,8 @@
 		"symfony/yaml": "v3.2.2",
 		"league/container": "2.2.0",
 		"consolidation/log": "1.0.3",
-		"predis/predis": "v1.1.1"
+		"predis/predis": "v1.1.1",
+		"symfony/http-foundation": "v3.2.2"
 	},
 	"repositories": {
 	    "packagist": {
