@@ -2,7 +2,19 @@ homepage:
   method: get
   path: /
   controller: \MFFC\Controllers\HomeController@home
-user_info:
+about:
   method: get
-  path: /user/info
-  controller: \MFFC\Controllers\UserController@info
+  path: /about
+  controller: \MFFC\Controllers\HomeController@about
+contact:
+  method: get
+  path: /contact
+  controller: \MFFC\Controllers\HomeController@contact
+portfolio:
+  method: get
+  path: /portfolio
+  controller: \MFFC\Controllers\HomeController@portfolio
+services:
+  method: get
+  path: /services
+  controller: \MFFC\Controllers\HomeController@services

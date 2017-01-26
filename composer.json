@@ -17,9 +17,9 @@
 	},
 	"autoload": {
 		"psr-4":{
-			"MFFC\\Controllers\\": "app/controllers",
-			"MFFC\\Models\\": "app/models",
-			"MFFC\\Container\\": "app/container",
+			"MFFC\\Controllers\\": "app/Controllers",
+			"MFFC\\Models\\": "app/Models",
+			"MFFC\\Container\\": "app/Container",
 			"MFFC\\core\\": "core"
 		}
 	}

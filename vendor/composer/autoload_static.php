@@ -95,15 +95,15 @@ class ComposerStaticInitb6379d1c3b2720e75008dc9605528328
         ),
         'MFFC\\Models\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/app/models',
+            0 => __DIR__ . '/../..' . '/app/Models',
         ),
         'MFFC\\Controllers\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/app/controllers',
+            0 => __DIR__ . '/../..' . '/app/Controllers',
         ),
         'MFFC\\Container\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/app/container',
+            0 => __DIR__ . '/../..' . '/app/Container',
         ),
         'League\\Container\\' => 
         array (

@@ -1,7 +1,7 @@
 <?php
 namespace MFFC\Controllers;
 
-use MFFC\Container\MFFCcontainer;
+use MFFC\Container\MFFCContainer;
 use League\Container\Container;
 
 class BaseController{
@@ -10,9 +10,9 @@ class BaseController{
 	protected $container = null;
 
 	public function __construct(){
-		$loader = new \Twig_Loader_Filesystem('./app/views');
+		$loader = new \Twig_Loader_Filesystem('./app/Views');
 		$this->twig = new \Twig_Environment($loader, array('cache'=>'./cache/compilation_cache'));
 
-		$this->container = new MFFCcontainer(new Container);
+		$this->container = new MFFCContainer(new Container);
 	}
 }

@@ -4,7 +4,7 @@ namespace MFFC\Models;
 
 use Doctrine\ORM\Tools\Setup as Setup;
 use Doctrine\ORM\EntityManager as EntityManager;
-use MFFC\Container\MFFCcontainer;
+use MFFC\Container\MFFCContainer;
 use League\Container\Container;
 
 class BaseModel{
@@ -12,7 +12,7 @@ class BaseModel{
 	protected $container = null;
 
 	public function __construct(){
-		$this->container = new MFFCcontainer(new Container);
+		$this->container = new MFFCContainer(new Container);
 		$config_parameter = $this->container->get('ConfigService')->set_config('config.yml')->get_config();
 		$isDevMode = true;
 		$config = Setup::createAnnotationMetadataConfiguration(array(__DIR__."/app/models"), $isDevMode);

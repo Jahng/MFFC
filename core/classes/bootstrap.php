@@ -1,13 +1,13 @@
 <?php
 namespace MFFC\core\classes;
-use MFFC\Container\MFFCcontainer;
+use MFFC\Container\MFFCContainer;
 use League\Container\Container;
 use NoahBuscher\Macaw\Macaw;
 class bootstrap{
 	protected $container = null;
 
 	public function __construct(){
-		$this->container = new MFFCcontainer(new Container);
+		$this->container = new MFFCContainer(new Container);
 		$this->_route_init();
 	}
 
