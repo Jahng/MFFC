@@ -7,8 +7,18 @@ class HomeController extends BaseController{
 
 	public function home(){
 		//$this->container->get('ConsoleLogger')->error('this is home page');// test log
-		$template = $this->twig->load('index.html');
-		echo $template->render();
+		$Article_model = new Models\ArticleModel();
+		$header_article = $Article_model->findOne(1);
+
+		//list
+
+		$list = $Article_model->findList(array('cid' => 2));
+
+		$data = array(
+			'header_article' => $header_article,
+			'list' => $list
+		);
+		echo $this->twig->render('index.html', $data);
 	}
 	public function about(){
 		$template = $this->twig->load('about.html');

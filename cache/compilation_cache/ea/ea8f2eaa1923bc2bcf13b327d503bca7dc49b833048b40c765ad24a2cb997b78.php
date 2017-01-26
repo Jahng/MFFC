@@ -27,8 +27,14 @@ class __TwigTemplate_dbc9247c92d021e7253bcc7935179d59300020af8f6142b5fe893d76d40
 \t\t\t\t<div class=\"col-md-12 col-md-offset-0 text-left\">
 \t\t\t\t\t<div class=\"display-t\">
 \t\t\t\t\t\t<div class=\"display-tc\">
-\t\t\t\t\t\t\t<h1 class=\"animate-box\" data-animate-effect=\"fadeInUp\">Your Business To The Next Level</h1>
-\t\t\t\t\t\t\t<h2 class=\"animate-box\" data-animate-effect=\"fadeInUp\">Free HTML5 Bootstrap Templates Made <em>by</em> More Templates <a href=\"http://www.cssmoban.com/\" target=\"_blank\" title=\"模板之家\">模板之家</a> - Collect from <a href=\"http://www.cssmoban.com/\" title=\"网页模板\" target=\"_blank\">网页模板</a></h2>
+\t\t\t\t\t\t\t<h1 class=\"animate-box\" data-animate-effect=\"fadeInUp\">";
+        // line 11
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["header_article"]) ? $context["header_article"] : null), "title", array(), "array"), "html", null, true);
+        echo "</h1>
+\t\t\t\t\t\t\t";
+        // line 12
+        echo $this->getAttribute((isset($context["header_article"]) ? $context["header_article"] : null), "description", array(), "array");
+        echo "
 \t\t\t\t\t\t\t<p class=\"animate-box\" data-animate-effect=\"fadeInUp\"><a href=\"#\" class=\"btn btn-white btn-lg btn-outline\">Get In Touch</a></p>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
@@ -40,37 +46,61 @@ class __TwigTemplate_dbc9247c92d021e7253bcc7935179d59300020af8f6142b5fe893d76d40
 \t<div id=\"gtco-features-3\">
 \t\t<div class=\"gtco-container\">
 \t\t\t<div class=\"gtco-flex\">
-\t\t\t\t<div class=\"feature feature-1 animate-box\" data-animate-effect=\"fadeInUp\">
+\t\t\t\t";
+        // line 24
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["list"]) ? $context["list"] : null));
+        $context['loop'] = array(
+          'parent' => $context['_parent'],
+          'index0' => 0,
+          'index'  => 1,
+          'first'  => true,
+        );
+        if (is_array($context['_seq']) || (is_object($context['_seq']) && $context['_seq'] instanceof Countable)) {
+            $length = count($context['_seq']);
+            $context['loop']['revindex0'] = $length - 1;
+            $context['loop']['revindex'] = $length;
+            $context['loop']['length'] = $length;
+            $context['loop']['last'] = 1 === $length;
+        }
+        foreach ($context['_seq'] as $context["_key"] => $context["r"]) {
+            // line 25
+            echo "\t\t\t\t<div class=\"feature feature-";
+            echo twig_escape_filter($this->env, $this->getAttribute($context["loop"], "index", array()), "html", null, true);
+            echo " animate-box\" data-animate-effect=\"fadeInUp\">
 \t\t\t\t\t<div class=\"feature-inner\">
 \t\t\t\t\t\t<span class=\"icon\">
-\t\t\t\t\t\t\t<i class=\"ti-search\"></i>
+\t\t\t\t\t\t\t<i class=\"";
+            // line 28
+            echo twig_escape_filter($this->env, $this->getAttribute($context["r"], "image", array(), "array"), "html", null, true);
+            echo "\"></i>
 \t\t\t\t\t\t</span>
-\t\t\t\t\t\t<h3>Search</h3>
-\t\t\t\t\t\t<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. </p>
+\t\t\t\t\t\t<h3>";
+            // line 30
+            echo twig_escape_filter($this->env, $this->getAttribute($context["r"], "title", array(), "array"), "html", null, true);
+            echo "</h3>
+\t\t\t\t\t\t<p>";
+            // line 31
+            echo twig_escape_filter($this->env, $this->getAttribute($context["r"], "description", array(), "array"), "html", null, true);
+            echo "</p>
 \t\t\t\t\t\t<p><a href=\"#\" class=\"btn btn-white btn-outline\">Learn More</a></p>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
-\t\t\t\t<div class=\"feature feature-2 animate-box\" data-animate-effect=\"fadeInUp\">
-\t\t\t\t\t<div class=\"feature-inner\">
-\t\t\t\t\t\t<span class=\"icon\">
-\t\t\t\t\t\t\t<i class=\"ti-announcement\"></i>
-\t\t\t\t\t\t</span>
-\t\t\t\t\t\t<h3>Announcdement</h3>
-\t\t\t\t\t\t<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. </p>
-\t\t\t\t\t\t<p><a href=\"#\" class=\"btn btn-white btn-outline\">Learn More</a></p>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"feature feature-3 animate-box\" data-animate-effect=\"fadeInUp\">
-\t\t\t\t\t<div class=\"feature-inner\">
-\t\t\t\t\t\t<span class=\"icon\">
-\t\t\t\t\t\t\t<i class=\"ti-timer\"></i>
-\t\t\t\t\t\t</span>
-\t\t\t\t\t\t<h3>Timer</h3>
-\t\t\t\t\t\t<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. </p>
-\t\t\t\t\t\t<p><a href=\"#\" class=\"btn btn-white btn-outline\">Learn More</a></p>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t</div>
+\t\t\t\t";
+            ++$context['loop']['index0'];
+            ++$context['loop']['index'];
+            $context['loop']['first'] = false;
+            if (isset($context['loop']['length'])) {
+                --$context['loop']['revindex0'];
+                --$context['loop']['revindex'];
+                $context['loop']['last'] = 0 === $context['loop']['revindex0'];
+            }
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['r'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 36
+        echo "\t\t\t</div>
 \t\t</div>
 \t</div>
 \t
@@ -318,9 +348,9 @@ class __TwigTemplate_dbc9247c92d021e7253bcc7935179d59300020af8f6142b5fe893d76d40
 \t\t</div>
 \t</div>
 ";
-        // line 301
-        $this->loadTemplate("footer.html", "index.html", 301)->display($context);
-        // line 302
+        // line 283
+        $this->loadTemplate("footer.html", "index.html", 283)->display($context);
+        // line 284
         echo "
 ";
     }
@@ -337,7 +367,7 @@ class __TwigTemplate_dbc9247c92d021e7253bcc7935179d59300020af8f6142b5fe893d76d40
 
     public function getDebugInfo()
     {
-        return array (  324 => 302,  322 => 301,  21 => 2,  19 => 1,);
+        return array (  354 => 284,  352 => 283,  103 => 36,  84 => 31,  80 => 30,  75 => 28,  68 => 25,  51 => 24,  36 => 12,  32 => 11,  21 => 2,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */

@@ -8,8 +8,8 @@
 				<div class="col-md-12 col-md-offset-0 text-left">
 					<div class="display-t">
 						<div class="display-tc">
-							<h1 class="animate-box" data-animate-effect="fadeInUp">Your Business To The Next Level</h1>
-							<h2 class="animate-box" data-animate-effect="fadeInUp">Free HTML5 Bootstrap Templates Made <em>by</em> More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家"></a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank"></a></h2>
+							<h1 class="animate-box" data-animate-effect="fadeInUp">{{ header_article['title'] }}</h1>
+							{{ header_article['description']|raw }}
 							<p class="animate-box" data-animate-effect="fadeInUp"><a href="#" class="btn btn-white btn-lg btn-outline">Get In Touch</a></p>
 						</div>
 					</div>
@@ -21,36 +21,18 @@
 	<div id="gtco-features-3">
 		<div class="gtco-container">
 			<div class="gtco-flex">
-				<div class="feature feature-1 animate-box" data-animate-effect="fadeInUp">
+				{% for r in list %}
+				<div class="feature feature-{{ loop.index }} animate-box" data-animate-effect="fadeInUp">
 					<div class="feature-inner">
 						<span class="icon">
-							<i class="ti-search"></i>
+							<i class="{{ r['image'] }}"></i>
 						</span>
-						<h3>Search</h3>
-						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. </p>
+						<h3>{{ r['title'] }}</h3>
+						<p>{{ r['description'] }}</p>
 						<p><a href="#" class="btn btn-white btn-outline">Learn More</a></p>
 					</div>
 				</div>
-				<div class="feature feature-2 animate-box" data-animate-effect="fadeInUp">
-					<div class="feature-inner">
-						<span class="icon">
-							<i class="ti-announcement"></i>
-						</span>
-						<h3>Announcdement</h3>
-						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. </p>
-						<p><a href="#" class="btn btn-white btn-outline">Learn More</a></p>
-					</div>
-				</div>
-				<div class="feature feature-3 animate-box" data-animate-effect="fadeInUp">
-					<div class="feature-inner">
-						<span class="icon">
-							<i class="ti-timer"></i>
-						</span>
-						<h3>Timer</h3>
-						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. </p>
-						<p><a href="#" class="btn btn-white btn-outline">Learn More</a></p>
-					</div>
-				</div>
+				{% endfor %}
 			</div>
 		</div>
 	</div>
