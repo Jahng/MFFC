@@ -15,25 +15,25 @@ class MFFCContainer{
 
 
 	private function init(){
-
+		$this->container->addServiceProvider(new MFFCServiceProvider);
 		// add config service to container
-		$this->container->add('ConfigService','MFFC\core\classes\config');
+		//$this->container->add('ConfigService','MFFC\core\classes\config');
 
 		// add log service to container 
-		$this->container->add('StreamOutput', function(){
-			return new Output\StreamOutput(fopen('./log/debug.log','a',false));
-		});
+		//$this->container->add('StreamOutput', function(){
+		//	return new Output\StreamOutput(fopen('./log/debug.log','a',false));
+		//});
 
-		$this->container->add('ConsoleLogger','Symfony\Component\Console\Logger\ConsoleLogger')->withArgument('StreamOutput');
+		//$this->container->add('ConsoleLogger','Symfony\Component\Console\Logger\ConsoleLogger')->withArgument('StreamOutput');
 
 		// add redis service to container
-		$config = $this->container->get('ConfigService')->set_config('config.yml')->get_config();
-		if($config['redis']['enable'] == true){
-			$this->container->add('RedisClient',function() use($config){
-				$redis_config = $config['redis']['config'];
-				return new \Predis\Client($redis_config);
-			});
-		}
+		//$config = $this->container->get('ConfigService')->set_config('config.yml')->get_config();
+		//if($config['redis']['enable'] == true){
+		//	$this->container->add('RedisClient',function() use($config){
+		//		$redis_config = $config['redis']['config'];
+		//		return new \Predis\Client($redis_config);
+		//	});
+		//}
 	}
 
 	public function get($service){
